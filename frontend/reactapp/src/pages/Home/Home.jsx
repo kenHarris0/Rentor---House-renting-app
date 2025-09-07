@@ -14,6 +14,9 @@ const handlenav=(id)=>{
 const filteredListings=alllistings.filter((listing)=>{
   return Object.entries(userfilter).every(([key,value])=>{
     if(value==="all") return true
+    if(key==="price"){
+      return Number(listing[key])<=Number(value)
+    }
     return String(listing[key]).toLowerCase()===String(value).toLowerCase();
   })
 

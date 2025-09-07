@@ -7,9 +7,11 @@ import {useNavigate} from 'react-router-dom'
 import premiumlogo from '../../assets/premium.png'
 import prologo from '../../assets/4907289.png'
 import ultralogo from '../../assets/ultra.png'
-const Navbar = () => {
+const Navbar = ({footerref}) => {
 const {userdata,showlogin,setshowlogin,loginstate,setloginstate,url,isuserauth, setuserdata,haspremium,premiumtype}=useContext(Rentcontext)
-
+const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
 const navigator=useNavigate()
 const logout=async()=>{
   try{
@@ -50,6 +52,7 @@ const [showlogout,setshowlogout]=useState(false)
   return (
    <div className='navbar'>
   <h1 onClick={()=>navigator("/")}>RENTOR</h1>
+  <p onClick={() => scrollToSection(footerref)}>links</p>
   {!haspremium?<div className="premium" ><p onClick={()=>navigator("/premium")}>Get premium</p></div>:<img src={logo} alt='x' className='premiumimg'  onClick={()=>navigator("/premium")}/>}
   {!loginstate ? (
     <button onClick={() => setshowlogin(true)}>Login</button>

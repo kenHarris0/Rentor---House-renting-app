@@ -114,7 +114,7 @@ const Listing = () => {
               {haspremium?<p className="listp"><span className="listspan discounted">Premium Price:</span> ${discountedprice} / month</p>:<p className="listp"><span className="listspan discounted">Price:</span> ${itemdata.price} / month</p>}
               <p className="listp"><span className="listspan">Location:</span> {itemdata.location}</p>
               <p className="listp"><span className="listspan">Facilities:</span> {itemdata.facilities}</p>
-               <p className="listp"><span className="listspan">Owner:</span> {itemdata.owner}</p>
+               <p className="listp"><span className="listspan">Owner:</span> {ownerdata.name}</p>
             </div>
 
            

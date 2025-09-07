@@ -1,0 +1,51 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    min-height: 30vh;
+    border: 1px solid black;
+}
+
+.top-footer{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.footer-part{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    margin-top: 20px;
+}
+.footer-part h3{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-part p{
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.footer-part p:hover{
+    text-decoration: underline;
+}
+
+hr{
+    width: 78%;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.bottom-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
