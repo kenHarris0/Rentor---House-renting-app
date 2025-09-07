@@ -1,0 +1,55 @@
+.premiumpg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.plans-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin-top: 150px;
+
+    
+}
+
+.plan-card{
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.plan-card ul {
+    list-style: none;
+}
+
+.subscribe-btn{
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    align-self: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.subscribe-btn :hover{
+    background-color: gray;
+    color: yellow;
+}
+
+.xxx{
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,102 @@
+.listing-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.secondcont {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  gap: 20px; 
+}
+.listing-page h1{
+  font-size: 30px;
+  margin-bottom: 30px;
+  align-self: center;
+  color: rgb(153, 153, 120);
+}
+
+.iteminfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.iteminfo img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.listp {
+  font-size: 18px;
+  font-family: Jost, sans-serif;
+  margin: 8px 0;
+}
+
+.listspan {
+  font-weight: bold;
+  margin-right: 6px;
+  color: bisque;
+}
+
+.owners-info {
+  width: 50%;
+  border: 1px solid black;
+ 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+   min-height: 60vh;
+}
+.ownerdiv{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+ 
+}
+.owners-info h2{
+  font-size: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: blanchedalmond;
+  margin-bottom: 20px;
+}
+
+.ownerspan{
+  font-size: 25px;
+  font-family: jost;
+  padding-right: 10px;
+  font-weight: 500;
+  color: bisque;
+}
+
+.ownerp{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.branchlist{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+
+.owners-info h3{
+  font-size: 30px;
+  font-family: Jost;
+  align-self: center;
+  color:beige;
+
+}

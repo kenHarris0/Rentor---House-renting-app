@@ -1,0 +1,51 @@
+.sidebar{
+    
+    height: 50vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: beige;
+    border-radius: 10px;
+
+}
+.sidebar h1{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  width: 100%;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.options{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.options select{
+    width: 150px;
+    height: 20px;
+}
+
+.options input{
+    width: 150px;
+    height: 20px;
+}
+.input-form button{
+    align-self: center;
+    width: 100px;
+    height: 30px;
+}
