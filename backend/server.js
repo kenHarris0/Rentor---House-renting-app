@@ -6,7 +6,7 @@ const cookieParser=require("cookie-parser")
 const userrouter=require("./routes/userrouter")
 const itemrouter=require("./routes/itemroutes")
 const app=express()
-const frontendorigin="http://localhost:5173"
+const frontendorigin="https://rentor-house-renting-app.onrender.com"
  const path = require("path");
 const PORT=process.env.PORT || 4000
 app.use(cors({origin:frontendorigin,credentials:true}))
