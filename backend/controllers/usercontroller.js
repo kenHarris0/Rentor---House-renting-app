@@ -111,7 +111,7 @@ const logout=async(req,res)=>{
         res.clearCookie("token",{
              httpOnly:true,
             secure:false,
-            sameSite:true,
+            sameSite:"none",
             maxAge:60*60*1000
         })
         res.json({success:true,message:"logged out"})
@@ -126,7 +126,7 @@ const maketransaction=async(req,res)=>{
 
     const {plan}=req.body
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-const frontendurl = "http://localhost:5173";
+const frontendurl = "https://rentor-house-renting-app.onrender.com";
 
     let price=0
     if(plan==="premium") price=1000
