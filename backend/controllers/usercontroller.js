@@ -110,7 +110,7 @@ const logout=async(req,res)=>{
     try{
         res.clearCookie("token",{
              httpOnly:true,
-            secure:false,
+            secure:true,
             sameSite:"none",
             maxAge:60*60*1000
         })
