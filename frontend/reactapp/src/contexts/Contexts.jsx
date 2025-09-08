@@ -6,6 +6,9 @@ import { toast } from 'react-toastify'
 export const Rentcontext=createContext()
 
 const Rentcontextprovider = ({children}) => {
+    
+  axios.defaults.withCredentials = true;
+  
 const url="https://rentor-backend.onrender.com"
 //users filters
 const [userfilter,setuserfilter]=useState({
