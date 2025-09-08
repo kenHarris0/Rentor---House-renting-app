@@ -4,7 +4,7 @@ import {Rentcontext} from '../../contexts/Contexts'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 const Profile = () => {
-  const {userdata,alllistings, setalllistings,url, getalllistings,setuserdata,fetchuserdata}=useContext(Rentcontext)
+  const {userdata,alllistings, setalllistings,url, getalllistings,setuserdata,fetchuserdata,url}=useContext(Rentcontext)
 
 const [listingdata, setlistingdata] = useState({
   name: "",
@@ -61,7 +61,7 @@ const handlesubmit = async (e) => {
     
 
     const response = await axios.post(
-      "http://localhost:5000/item/additem",
+      url+"/item/additem",
       formData,
       {
         headers: {
